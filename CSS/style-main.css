@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+header{
+    width: 100%;
+    height: fit-content;
+    padding: 2% 6%;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.header-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: royalblue;
+    text-decoration: none;
+}
+
+.main-nav ul{
+    display: flex;
+    flex-direction: row;
+    max-width: 750px;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.main-nav ul li{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.main-nav ul li .list{
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.main-nav ul .list::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    display: block;
+    background-color: orange;
+    transition: 0.5s;
+}
+
+.main-nav ul .list:hover::after{
+    width: 100%;
+}
+
+.login{
+    background-color: non;
+    outline: none;
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(0, 0, 56);
+    background-color: darkblue;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.mainpage-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/main-page/background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form .search-box{
+    width: 40rem;
+    height: auto;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid royalblue;
+    color: darkred;
+    font-size: 1.8rem;
+    background: transparent;
+}
+
+::-webkit-input-placeholder{
+    color: darkred;
+    font-size: 1.7rem;
+}
+
+.search-btn{
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid darkblue;
+    background-color: royalblue;
+    color: white;
+}
