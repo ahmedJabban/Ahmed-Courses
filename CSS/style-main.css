@@ -48,6 +48,7 @@ header{
     color: rgb(48, 48, 48);
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .main-nav ul .list::after{
@@ -56,7 +57,7 @@ header{
     height: 2px;
     margin: auto;
     display: block;
-    background-color: orange;
+    background-color: darkblue;
     transition: 0.5s;
 }
 
@@ -96,13 +97,13 @@ header{
     border: none;
     border-radius: 10px;
     border: 2px solid royalblue;
-    color: darkred;
+    color: white;
     font-size: 1.8rem;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-input-placeholder{
-    color: darkred;
+    color: whitesmoke;
     font-size: 1.7rem;
 }
 
@@ -117,4 +118,14 @@ header{
     border-bottom: 2px solid darkblue;
     background-color: royalblue;
     color: white;
+    cursor: pointer;
+}
+
+.search-btn:hover{
+    background-color: blue;
+    border-bottom: 2px solid rgb(0, 0, 51);
+}
+
+.login:hover{
+    background-color: blue;
 }
