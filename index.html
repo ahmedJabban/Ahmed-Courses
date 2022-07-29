@@ -7,18 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed-Courses</title>
     <link rel="stylesheet" href="CSS/style-main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="JavaScript/main-page.js"></script>
 </head>
 <body>
+
     <header class="main-header">
         <a href="index.html" class="header-title">Ahmed-Courses</a>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#" class="list">Free Courses</a></li>
-                <li><a href="#" class="list">Paid Courses</a></li>
-                <li><a href="#" class="list">Work With Us?</a></li>
-                <li><a href="#" class="list">About</a></li>
-            </ul>
+        <div class="list-icon">
+            <i class="fa-solid fa-bars" id="list-icon" onclick="Show_Menu()"></i>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <div class="nav-links" id="nav-links">
+                <div class="x-icon">
+                    <i class="fa-solid fa-x" id="x-icon" onclick="Hide_Menu()"></i>
+                </div>
+                <ul>
+                    <li><a href="#" class="list">Free Courses</a></li>
+                    <li><a href="#" class="list">Paid Courses</a></li>
+                    <li><a href="#" class="list">Work With Us?</a></li>
+                    <li><a href="#" class="list">About</a></li>
+                </ul>
+            </div>
         </nav>
         <a href="pages/login-page.html" class="login">Login Now</a>
     </header>
@@ -29,5 +39,18 @@
             <button class="search-btn">Search</button>
         </form>
     </section>
+
+    <script>
+        var ApearMenu = document.getElementById("nav-links");
+
+        function Show_Menu(){
+            ApearMenu.style.right = "0";
+        }
+
+        function Hide_Menu(){
+            ApearMenu.style.right = "-100%";
+        }
+    </script>
+
 </body>
 </html>

@@ -15,6 +15,14 @@ body{
     background-color: rgb(224, 224, 224);
 }
 
+.info-up{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .div-log-form{
     background-color: white;
     border-radius: 20px;
@@ -25,9 +33,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 h1{
@@ -45,72 +50,74 @@ hr{
     margin: 20px 0;
 }
 
-.div-log-form form div{
-    margin: 30px auto;
+.mid-info{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
 }
 
-.mid-info input{
-    border: none;
-    background: none;
-    display: block;
-    margin: 20px auto;
+.mid-info .info-box{
+    margin: 15px auto;
     text-align: center;
-    border:1px solid #3498db;
-    padding: 14px 10px;
-    width: 200px;
     outline: none;
-    color: white;
-    border-radius: 24px;
-    color: black;
+    border: none;
+    background: transparent;
+    border: 2px solid rgb(0, 158, 197);
+    border-radius: 20px;
+    padding: 10px;
     transition: 0.25s;
 }
 
-.info-box:focus{
-    width: 25rem;
-    margin: auto;
-    border-color: darkblue;
+.mid-info .info-box:focus{
+    border-color: blue;
+    width: 250px;
 }
 
 .log-btns{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     text-align: center;
-    width: 25rem;
+    margin: 20px auto;
 }
 
-.div-log-form input[type="submit"]{
+.log-btns input[type="submit"]{
+    padding: 10px 30px;
     background: transparent;
     outline: none;
     border: none;
-    margin: 4rem 2rem auto auto;
-    border: 1px solid darkblue;
-    padding: 10px;
+    border: 2px solid blue;
     border-radius: 20px;
-    width: 50%;
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
-    text-align: center;
 }
 
-.div-log-form .log-btns input[type="submit"]:hover{
-    background-color: blue;
-    color: white;
-}
-
-.div-log-form .log-btns a{
+.log-btns button{
     text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 1.3rem;
+    text-align: center;
+    padding: 10px 20px;
     outline: none;
-    background: transparent;
     border: none;
-    border: 1px solid green;
-    padding: 1rem 1.3rem;
+    background: transparent;
+    border: 2px solid green;
     border-radius: 20px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-.div-log-form .log-btns a:hover{
-    background-color: green;
+.log-btns input[type="submit"]:hover{
     color: white;
+    background-color: blue;
+}
+
+.log-btns button:hover{
+    color: white;
+    background-color: green;
 }

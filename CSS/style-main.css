@@ -13,6 +13,16 @@ html{
     font-size: 10px;
 }
 
+.list-icon{
+    display: none;
+}
+
+.x-icon{
+    display: none;
+    font-size: 20px;
+    text-align: right;
+}
+
 header{
     width: 100%;
     height: fit-content;
@@ -132,4 +142,59 @@ header{
 
 .login:hover{
     background-color: darkblue;
+}
+
+@media (max-width:539px){
+
+    header{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .header-title{
+        font-size: 2.5rem;
+    }
+
+    header .login{
+        display: none;
+    }
+
+    header nav ul li{
+        display: block;
+        margin-top: 10px;
+    }
+
+    header nav .nav-links{
+        position: absolute;
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -80%;
+        z-index: 10;
+        background-color: #eee;
+        padding: 20px;
+        transition: 1s;
+        display: block;
+    }
+
+    .main-form .search-box{
+        width: 25rem;
+        height: fit-content;
+    }
+
+    .list-icon{
+        display: block;
+        font-size: 20px;
+    }
+
+    .x-icon{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width:767px){
+    
 }
