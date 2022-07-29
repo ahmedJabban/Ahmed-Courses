@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+.div-log-form{
+    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: royalblue;
+    font-size: 3rem;
+}
+
+hr{
+    width: 70%;
+    height: 3px;
+    outline: none;
+    border: 0px;
+    border-radius: 20px;
+    background-color: royalblue;
+    margin: 20px 0;
+}
+
+.div-log-form form div{
+    margin: 30px auto;
+}
+
+.mid-info input{
+    border: none;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:1px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    color: black;
+    transition: 0.25s;
+}
+
+.info-box:focus{
+    width: 25rem;
+    margin: auto;
+    border-color: darkblue;
+}
+
+.log-btns{
+    text-align: center;
+    width: 25rem;
+}
+
+.div-log-form input[type="submit"]{
+    background: transparent;
+    outline: none;
+    border: none;
+    margin: 4rem 2rem auto auto;
+    border: 1px solid darkblue;
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.div-log-form .log-btns input[type="submit"]:hover{
+    background-color: blue;
+    color: white;
+}
+
+.div-log-form .log-btns a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.3rem;
+    outline: none;
+    background: transparent;
+    border: none;
+    border: 1px solid green;
+    padding: 1rem 1.3rem;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.div-log-form .log-btns a:hover{
+    background-color: green;
+    color: white;
+}

@@ -16,10 +16,10 @@ html{
 header{
     width: 100%;
     height: fit-content;
-    padding: 2% 6%;
+    padding: 1% 0%;
     background-color: #eee;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
 }
@@ -70,7 +70,7 @@ header{
     outline: none;
     border-radius: 10px;
     border-bottom: 2px solid rgb(0, 0, 56);
-    background-color: darkblue;
+    background-color: royalblue;
     padding: 15px;
     font-weight: bold;
     color: white;
@@ -107,6 +107,10 @@ header{
     font-size: 1.7rem;
 }
 
+.main-form .search-box:focus{
+    border-color: darkblue;
+}
+
 .search-btn{
     width: fit-content;
     height: fit-content;
@@ -122,10 +126,10 @@ header{
 }
 
 .search-btn:hover{
-    background-color: blue;
+    background-color: darkblue;
     border-bottom: 2px solid rgb(0, 0, 51);
 }
 
 .login:hover{
-    background-color: blue;
+    background-color: darkblue;
 }
