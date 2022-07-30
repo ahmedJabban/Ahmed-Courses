@@ -20,6 +20,7 @@ body{
 .list-icon{
     display: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .x-icon{
@@ -201,6 +202,7 @@ body{
         transition: 0.1s;
         display: flex;
         flex-direction: column;
+        overflow-y: scroll;
     }
 
     .main-form .search-box{
@@ -272,6 +274,7 @@ body{
         transition: 1s;
         display: flex;
         flex-direction: column;
+        overflow-y: scroll;
     }
 
     .main-form .search-box{
