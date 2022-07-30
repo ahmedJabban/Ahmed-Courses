@@ -13,6 +13,10 @@ html{
     font-size: 10px;
 }
 
+body{
+    overflow: hidden;
+}
+
 .list-icon{
     display: none;
     cursor: pointer;
