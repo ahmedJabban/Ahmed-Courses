@@ -12,33 +12,43 @@
 </head>
 <body>
 
-    <header class="main-header">
-        <a href="index.html" class="header-title">Ahmed-Courses</a>
-        <div class="list-icon">
-            <i class="fa-solid fa-bars" id="list-icon" onclick="Show_Menu()"></i>
-        </div>
-        <nav class="main-nav" id="main-nav">
-            <div class="nav-links" id="nav-links">
-                <div class="x-icon">
-                    <i class="fa-solid fa-x" id="x-icon" onclick="Hide_Menu()"></i>
-                </div>
-                <ul>
-                    <li><a href="#" class="list">Free Courses</a></li>
-                    <li><a href="#" class="list">Paid Courses</a></li>
-                    <li><a href="#" class="list">Work With Us?</a></li>
-                    <li><a href="#" class="list">About</a></li>
-                </ul>
-                <a href="pages/login-page.html" class="login menu" id="login-hiden" onclick="Hide_Menu()">Login Now</a>
+    <div class="header-div">
+        <header class="main-header">
+            <a href="index.html" class="header-title">Ahmed-Courses</a>
+            <div class="list-icon">
+                <i class="fa-solid fa-bars" id="list-icon" onclick="Show_Menu()"></i>
             </div>
-        </nav>
-        <a href="pages/login-page.html" class="login">Login Now</a>
-    </header>
+            <nav class="main-nav" id="main-nav">
+                <div class="nav-links" id="nav-links">
+                    <div class="x-icon">
+                        <i class="fa-solid fa-x" id="x-icon" onclick="Hide_Menu()"></i>
+                    </div>
+                    <ul>
+                        <li><a href="#" class="list">Free Courses</a></li>
+                        <li><a href="#" class="list">Paid Courses</a></li>
+                        <li><a href="#" class="list">Work With Us?</a></li>
+                        <li><a href="#" class="list">About</a></li>
+                    </ul>
+                    <a href="pages/login-page.html" class="login menu" id="login-hiden" onclick="Hide_Menu()">Login Now</a>
+                </div>
+            </nav>
+            <a href="pages/login-page.html" class="login">Login Now</a>
+        </header>
+    </div>
 
     <section class="mainpage-section">
-        <form action="" class="main-form">
-            <input type="text" class="search-box" placeholder="Search For Any Course!">
-            <button class="search-btn">Search</button>
-        </form>
+        <div class="mainpage-section-con">
+            <div class="greeting-info">
+                <h1>Welcom!</h1>
+                <p>In this website you will find all what you are looking for.</p>
+                <p>We have paid and free courses, Also we will give an offer for who try this website for the first tiem!.</p>
+                <p>What you are waiting for?? enjoy learning!</p>
+            </div>
+            <form action="" class="main-form">
+                <input type="text" class="search-box" placeholder="Search For Any Course!">
+                <button class="search-btn">Search</button>
+            </form>
+        </div>
     </section>
 
     <script>

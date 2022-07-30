@@ -17,6 +17,7 @@ body{
     overflow-x: hidden;
 }
 
+/*-------------------------------------------Header----------------------------------------*/
 .list-icon{
     display: none;
     cursor: pointer;
@@ -51,6 +52,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 2;
     padding: 1% 3%;
 }
 
@@ -108,6 +110,8 @@ body{
     font-size: 1.5rem;
 }
 
+/*-------------------------------------------Section----------------------------------------*/
+
 .mainpage-section{
     width: 100%;
     height: 100vh;
@@ -117,12 +121,49 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
-.main-form .search-box{
-    width: 40rem;
-    height: auto;
+.greeting-info{
+    width: 80%;
+    height: fit-content;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0% auto;
+}
+
+.greeting-info h1{
+    color: gold;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.greeting-info p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 25px;
+}
+
+.mainpage-section-con{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form{
+    text-align: center;
+    width: 100vw;
+    height: fit-content;
+}
+
+.main-form input[type=text]{
+    width: 40rem;;
+    height: fit-content;
     padding: 10px;
     outline: none;
     border: none;
@@ -137,6 +178,7 @@ body{
     color: whitesmoke;
     font-size: 1.7rem;
 }
+
 
 .main-form .search-box:focus{
     border-color: darkblue;
@@ -205,7 +247,7 @@ body{
         overflow-y: scroll;
     }
 
-    .main-form .search-box{
+    .main-form input[type=text]{
         width: 25rem;
         height: fit-content;
     }
@@ -220,6 +262,15 @@ body{
         margin-bottom: 20px;
     }
 
+    .greeting-info h1{
+        font-size: 3rem;
+    }
+    
+    .greeting-info p{
+        font-size: 1.3rem;
+        line-height: 20px;
+    }
+
 }
 
 @media (width:280px){
@@ -232,8 +283,9 @@ body{
         margin: auto;
     }
 
-    .main-form .search-btn{
-        margin: auto;
+    .main-form input[type=text]{
+        width: 19rem;
+        height: fit-content;
     }
 }
 
@@ -277,8 +329,8 @@ body{
         overflow-y: scroll;
     }
 
-    .main-form .search-box{
-        width: 25rem;
+    .main-form input[type=text]{
+        width: 40rem;
         height: fit-content;
     }
 
