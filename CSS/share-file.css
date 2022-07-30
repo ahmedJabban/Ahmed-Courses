@@ -109,3 +109,9 @@ body{
 .login.menu:hover{
     background-color: darkblue;
 }
+
+@media (width:280px){
+    .main-header .header-title{
+        font-size: 2rem;
+    }
+}

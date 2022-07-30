@@ -1,7 +1,6 @@
 .courses-se{
     width: 100%;
     height: 100vh;
-    background-color:rgba(0, 0, 0, 0.6);
     padding: 20px;
 }
 
@@ -17,8 +16,9 @@
     background-color: rgb(230, 230, 230);
     border-radius: 20px;
     padding: 20px;
-    text-align: center;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .containor-co div img{
@@ -26,10 +26,14 @@
     margin-bottom: 20px;
 }
 
-.containor-co div p{
+.title-co{
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+.containor-co div a:hover{
+    color: royalblue;
 }
 
 /*Containor Cards*/
@@ -90,23 +94,13 @@
         margin-bottom: 20px;
     }
 
-    .info-offer{
-        position: absolute;
-        top: 50%;
-    }
-    
-    .info-offer h1{
-        font-size: 1.3rem;
-        font-weight: bold;
-        color: gold;
-        background-color: royalblue;
-        padding: 10px;
-        border-radius: 10px;
-    }
-
     .containor-co div img{
         width: 250px;
         height: 150px;
+    }
+
+    .containor-co div{
+        margin: 50px auto;
     }
 }
 
@@ -115,23 +109,13 @@
         font-size: 2rem;
     }
 
-    .info-offer{
-        position: absolute;
-        top: 50%;
-    }
-    
-    .info-offer h1{
-        font-size: 1rem;
-        font-weight: bold;
-        color: gold;
-        background-color: royalblue;
-        padding: 10px;
-        border-radius: 10px;
-    }
-
     .containor-co div img{
         width: 170px;
         height: 120px;
+    }
+
+    .containor-co div{
+        margin: 50px auto;
     }
 }
 
@@ -184,33 +168,16 @@
         margin-bottom: 30px;
     }
 
-    .info-offer{
-        position: absolute;
-        top: 50%;
+    .containor-co{
+        display: grid;
+        grid-template-columns: auto;
     }
     
-    .info-offer h1{
-        font-size: 3rem;
-        font-weight: bold;
-        color: gold;
-        background-color: royalblue;
-        padding: 10px;
-        border-radius: 10px;
-    }
 }
 
-@media (min-width:990px){
-    .offer-se .offer-image{
-        position: absolute;
-        width: 70%;
-        height: 70%;
-        text-align: center;
-        margin-bottom: 20px;
-        top: 20%;
-    }
-
-    .info-offer{
-        position: absolute;
-        top: 75%;
+@media (min-width:1000px){
+    .containor-co{
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 }
