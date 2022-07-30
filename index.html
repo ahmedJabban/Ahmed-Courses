@@ -28,6 +28,7 @@
                     <li><a href="#" class="list">Work With Us?</a></li>
                     <li><a href="#" class="list">About</a></li>
                 </ul>
+                <a href="pages/login-page.html" class="login menu" id="login-hiden" onclick="Hide_Menu()">Login Now</a>
             </div>
         </nav>
         <a href="pages/login-page.html" class="login">Login Now</a>
@@ -42,13 +43,16 @@
 
     <script>
         var ApearMenu = document.getElementById("nav-links");
+        var list_btn = document.getElementById("list-icon");
 
         function Show_Menu(){
             ApearMenu.style.right = "0";
+            list_btn.style.display = "none";
         }
 
         function Hide_Menu(){
             ApearMenu.style.right = "-100%";
+            list_btn.style.display = "block";
         }
     </script>
 

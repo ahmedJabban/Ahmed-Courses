@@ -121,3 +121,21 @@ hr{
     color: white;
     background-color: green;
 }
+
+@media (max-width:539px){
+    .div-log-form{
+        width: 300px;
+    }
+}
+
+@media (width:280px){
+    .div-log-form{
+        width: 260px;
+    }
+}
+
+@media (min-width:540px){
+    .div-log-form{
+        width: 420px;
+    }
+}
