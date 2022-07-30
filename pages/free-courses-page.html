@@ -2,19 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="We have all kinds of free courses and paid courses!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed-Courses</title>
+    <title>Ahmed-Courses | Free Courses</title>
     <link rel="stylesheet" href="/CSS/share-file.css">
-    <link rel="stylesheet" href="CSS/style-main.css">
+    <link rel="stylesheet" href="/CSS/free-coursesCSS.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <script src="JavaScript/main-page.js"></script>
 </head>
 <body>
 
     <header class="main-header">
-        <a href="index.html" class="header-title">Ahmed-Courses</a>
+        <a href="../index.html" class="header-title">Ahmed-Courses</a>
         <div class="list-icon">
             <i class="fa-solid fa-bars" id="list-icon" onclick="Show_Menu()"></i>
         </div>
@@ -24,8 +22,9 @@
                     <i class="fa-solid fa-x" id="x-icon" onclick="Hide_Menu()"></i>
                 </div>
                 <ul>
+                    <li><a href="../index.html" class="list">Home</a></li>
                     <li><a href="/pages/free-courses-page.html" class="list">Free Courses</a></li>
-                    <li><a href="/pages/paid-courses-page.html" class="list">Paid Courses</a></li>
+                    <li><a href="#" class="list">Paid Courses</a></li>
                     <li><a href="#" class="list">Work With Us?</a></li>
                     <li><a href="#" class="list">About</a></li>
                 </ul>
@@ -34,20 +33,21 @@
         </nav>
         <a href="pages/login-page.html" class="login">Login Now</a>
     </header>
-  
 
-    <section class="mainpage-section">
-        <div class="mainpage-section-con">
-            <div class="greeting-info">
-                <h1>Welcom!</h1>
-                <p>In this website you will find all what you are looking for.</p>
-                <p>We have paid and free courses, Also we will give an offer for who try this website for the first time!.</p>
-                <p>What you are waiting for?? enjoy learning!</p>
+    <section class="courses-se">
+        <div class="containor-co">
+            <div class="prog-co">
+                <img src="../images/free-courses-MainPage/courses-pic/Programming-pic.jpg" alt="Programming-picture">
+                <p>Programming</p>
             </div>
-            <form action="" class="main-form">
-                <input type="text" class="search-box" placeholder="Search For Any Course!">
-                <button class="search-btn">Search</button>
-            </form>
+            <div class="lang-co">
+                <img src="../images/free-courses-MainPage/courses-pic/languages-pic.jpg" alt="Languages-picture">
+                <p>Languages</p>
+            </div>
+            <div class="other-co">
+                <img src="../images/free-courses-MainPage/courses-pic/other-pic.jpg" alt="Other-picture">
+                <p>Other Courses</p>
+            </div>
         </div>
     </section>
 
