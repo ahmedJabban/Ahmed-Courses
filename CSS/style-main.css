@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .list-icon{
@@ -41,15 +41,15 @@ body{
     cursor: pointer;
 }
 
-header{
+.main-header{
     width: 100%;
     height: fit-content;
-    padding: 1% 0%;
     background-color: #eee;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
     position: fixed;
+    padding: 1% 3%;
 }
 
 .header-title{
