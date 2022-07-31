@@ -112,6 +112,12 @@ body{
 
 @media (width:280px){
     .main-header .header-title{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width:539px){
+    .header-title{
         font-size: 2rem;
     }
 }
