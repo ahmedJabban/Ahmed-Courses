@@ -118,10 +118,14 @@ body{
 
 @media (max-width:539px){
     .header-title{
-<<<<<<< HEAD
-        font-size: 2.5rem;
-=======
+        font-size: 2.4rem;
+    }
+
+    .list-icon{
+        font-size: 2.4rem;
+    }
+    
+    .x-icon{
         font-size: 2.3rem;
->>>>>>> a6e83689a336bc9e6e614bcd55f7716602e325a0
     }
 }
