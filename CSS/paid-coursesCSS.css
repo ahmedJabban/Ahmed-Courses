@@ -44,58 +44,6 @@
 }
 
 @media (max-width:539px){
-
-    .main-header{
-        padding: 10px 20px;
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .header-title{
-        font-size: 2.5rem;
-    }
-
-    header .login{
-        display: none;
-    }
-
-    .login.menu{
-        display: block;
-    }
-
-    header nav ul li{
-        display: block;
-        margin-top: 10px;
-    }
-
-    header nav .nav-links{
-        position: absolute;
-        width: 200px;
-        height: 100vh;
-        top: 0;
-        right: -80%;
-        z-index: 10;
-        background-color: #eee;
-        padding: 20px;
-        transition: 0.1s;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .list-icon{
-        display: block;
-        font-size: 20px;
-    }
-
-    .x-icon{
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    .info-offer{
-        position: absolute;
-        top: 50%;
-    }
     
     .info-offer h1{
         font-size: 1.3rem;
@@ -108,9 +56,6 @@
 }
 
 @media (width:280px){
-    .header-title{
-        font-size: 2rem;
-    }
 
     .info-offer{
         position: absolute;
@@ -134,53 +79,6 @@
 }
 
 @media (min-width:540px){
-
-    .main-header{
-        padding: 20px 30px;
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .header-title{
-        font-size: 3.3rem;
-    }
-
-    header .login{
-        display: none;
-    }
-
-    .login.menu{
-        display: block;
-    }
-
-    header nav ul li{
-        display: block;
-        margin-top: 10px;
-    }
-
-    header nav .nav-links{
-        position: absolute;
-        width: 200px;
-        height: 100vh;
-        top: 0;
-        right: -80%;
-        z-index: 10;
-        background-color: #eee;
-        padding: 20px;
-        transition: 1s;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .list-icon{
-        display: block;
-        font-size: 30px;
-    }
-
-    .x-icon{
-        display: block;
-        margin-bottom: 30px;
-    }
 
     .info-offer{
         position: absolute;

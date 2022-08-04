@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed-Courses | Programming-Courses</title>
+    <link rel="stylesheet" href="../../../../CSS/share-file.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="../../../../index.html" class="header-title">Ahmed-Courses</a>
+        <div class="list-icon">
+            <i class="fa-solid fa-bars" id="list-icon" onclick="Show_Menu()"></i>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <div class="nav-links" id="nav-links">
+                <div class="x-icon">
+                    <i class="fa-solid fa-x" id="x-icon" onclick="Hide_Menu()"></i>
+                </div>
+                <ul>
+                    <li><a href="../../../../index.html" class="list">Home</a></li>
+                    <li><a href="../../../free-courses-page.html" class="list">Free Courses</a></li>
+                    <li><a href="../../../paid-courses-page.html" class="list">Paid Courses</a></li>
+                    <li><a href="#" class="list">Work With Us?</a></li>
+                    <li><a href="#" class="list">About</a></li>
+                </ul>
+                <a href="../../../login-page.html" class="login menu" id="login-hiden" onclick="Hide_Menu()">Login Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        var ApearMenu = document.getElementById("nav-links");
+        var list_btn = document.getElementById("list-icon");
+
+        function Show_Menu(){
+            ApearMenu.style.right = "0";
+            list_btn.style.display = "none";
+        }
+
+        function Hide_Menu(){
+            ApearMenu.style.right = "-100%";
+            list_btn.style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>

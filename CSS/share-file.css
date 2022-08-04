@@ -131,18 +131,100 @@ body{
 @media (max-width:539px){
 
     .main-header{
-        padding: 10px;
+        padding: 10px 20px;
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .header-title{
-        font-size: 2.3rem;
+        font-size: 2.5rem;
+    }
+
+    header .login{
+        display: none;
+    }
+
+    .login.menu{
+        display: block;
+    }
+
+    header nav ul li{
+        display: block;
+        margin-top: 10px;
+    }
+
+    header nav .nav-links{
+        position: absolute;
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -80%;
+        z-index: 10;
+        background-color: #eee;
+        padding: 20px;
+        transition: 0.1s;
+        display: flex;
+        flex-direction: column;
     }
 
     .list-icon{
-        font-size: 2.3rem;
+        display: block;
+        font-size: 2rem;
     }
-    
+
     .x-icon{
-        font-size: 2.3rem;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (min-width:540px){
+
+    .main-header{
+        padding: 20px 30px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .header-title{
+        font-size: 3.3rem;
+    }
+
+    header .login{
+        display: none;
+    }
+
+    .login.menu{
+        display: block;
+    }
+
+    header nav ul li{
+        display: block;
+        margin-top: 10px;
+    }
+
+    header nav .nav-links{
+        position: absolute;
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -80%;
+        z-index: 10;
+        background-color: #eee;
+        padding: 20px;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-icon{
+        display: block;
+        font-size: 3rem;
+    }
+
+    .x-icon{
+        display: block;
+        margin-bottom: 3rem;
     }
 }
