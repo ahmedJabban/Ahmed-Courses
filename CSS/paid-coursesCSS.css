@@ -127,6 +127,12 @@
     }
 }
 
+@media (width:540px){
+    .offer-se .info-offer h1{
+        font-size: 2rem;
+    }
+}
+
 @media (min-width:540px){
 
     .main-header{

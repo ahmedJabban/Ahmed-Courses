@@ -1,7 +1,7 @@
 .courses-se{
     width: 100%;
-    height: 100vh;
-    padding: 20px;
+    height: fit-content;
+    padding-top: 40px;
 }
 
 /*Cards*/
@@ -13,9 +13,9 @@
 
 .containor-co div{
     margin: 100px auto;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(190, 190, 190);
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px 10px 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +29,7 @@
 .title-co{
     font-size: 2rem;
     font-weight: bold;
+    text-transform: capitalize;
     cursor: pointer;
 }
 
@@ -40,9 +41,10 @@
 .containor-co{
     width: 100%;
     height: fit-content;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
+    align-items: center;
 }
 
 @media (max-width:539px){
@@ -102,6 +104,10 @@
     .containor-co div{
         margin: 50px auto;
     }
+
+    .containor-co{
+        grid-template-columns: auto;
+    }
 }
 
 @media (width:280px){
@@ -116,6 +122,14 @@
 
     .containor-co div{
         margin: 50px auto;
+    }
+
+    .title-co{
+        font-size: 1.5rem;
+    }
+
+    .containor-co{
+        grid-template-columns: auto;
     }
 }
 
@@ -172,6 +186,10 @@
         display: grid;
         grid-template-columns: auto;
     }
+
+    .title-co{
+        font-size: 3rem;
+    }
     
 }
 
@@ -179,5 +197,9 @@
     .containor-co{
         display: grid;
         grid-template-columns: auto auto auto;
+    }
+
+    .title-co{
+        font-size: 2.5rem;
     }
 }
