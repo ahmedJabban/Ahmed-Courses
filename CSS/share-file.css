@@ -179,6 +179,21 @@ body{
 
 }
 
+@media (width:540px){
+
+    .main-header .header-title{
+        font-size: 3rem;
+    }
+
+    .main-header .list-icon{
+        font-size: 3rem;
+    }
+
+    .main-header .x-icon{
+        font-size: 3rem;
+    }
+}
+
 @media (min-width:540px){
 
     .main-header{

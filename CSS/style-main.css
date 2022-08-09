@@ -16,7 +16,9 @@
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     padding: 20px;
-    margin: 0% auto;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .greeting-info h1{
@@ -38,13 +40,13 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 form{
     text-align: center;
     width: 100vw;
     height: fit-content;
+    margin: 50px auto;
 }
 
 .main-form input[type=text]{
@@ -105,6 +107,16 @@ form{
         line-height: 20px;
     }
 
+    form{
+        margin: 50px auto;
+    }
+
+    .greeting-info{
+        margin-top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media (width:280px){
@@ -120,5 +132,19 @@ form{
     .main-form input[type=text]{
         width: 40rem;
         height: fit-content;
+    }
+
+    .greeting-info{
+        margin-top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:950px){
+    .greeting-info{
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
