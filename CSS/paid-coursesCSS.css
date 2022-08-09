@@ -8,10 +8,10 @@
 }
 
 .offer-se .containor{
+    width: 100%;
+    height: fit-content;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .offer-se .offer-image{
@@ -28,9 +28,9 @@
     height: inherit;
 }
 
-.info-offer{
-    position: absolute;
-    top: 75%;
+.offer-se .info-offer{
+    max-width: 70%;
+    text-align: center;
 }
 
 .info-offer h1{
@@ -53,14 +53,10 @@
         padding: 10px;
         border-radius: 10px;
     }
+
 }
 
 @media (width:280px){
-
-    .info-offer{
-        position: absolute;
-        top: 50%;
-    }
     
     .info-offer h1{
         font-size: 1rem;
